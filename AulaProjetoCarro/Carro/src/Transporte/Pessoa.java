@@ -6,6 +6,7 @@ public class Pessoa {
     private String corDoCabelo;
     private String biotipo;
     private int idade;
+    private Carro car;
     
     public Pessoa(String nome, String corDoCabelo, String biotipo, int idade) {
         this.nome = nome;
@@ -44,5 +45,13 @@ public class Pessoa {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    public Carro getCar() {
+        return car;
+    }
+
+    public void setCar(Carro car) {
+        this.car = car;
     }
 }
