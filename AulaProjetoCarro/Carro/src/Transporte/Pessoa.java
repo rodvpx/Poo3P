@@ -7,6 +7,10 @@ public class Pessoa {
     private String biotipo;
     private int idade;
     private Carro car;
+
+    public Pessoa () {
+        
+    }
     
     public Pessoa(String nome, String corDoCabelo, String biotipo, int idade) {
         this.nome = nome;
