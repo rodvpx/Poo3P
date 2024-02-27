@@ -31,6 +31,45 @@ public class Teste {
         mensagem.append("\nPORTAS: " + carro.getNumPortas());
         mensagem.append("\nDONO: " + carro.getDono().getNome());
 
+        pessoa.setCarro(carro);
+
+        pessoa.ligarCarro();
+        pessoa.setCambioMarcha(1);
+        pessoa.getCarro().getCambio();
+        pessoa.aceleraCarro();
+
+        mensagem.append("\n");
+
+        pessoa.setCambioMarcha(2);
+        pessoa.getCarro().getCambio();
+        pessoa.aceleraCarro();
+
+        mensagem.append("\n");
+
+        pessoa.setCambioMarcha(3);
+        pessoa.getCarro().getCambio();
+        pessoa.aceleraCarro();
+
+        mensagem.append("\n");
+
+        pessoa.setCambioMarcha(2);
+        pessoa.getCarro().getCambio();
+        pessoa.aceleraCarro();
+
+        mensagem.append("\n");
+
+        pessoa.ligarCarro();
+        pessoa.setCambioMarcha(1);
+        pessoa.getCarro().getCambio();
+        pessoa.aceleraCarro();
+
+        mensagem.append("\n");
+
+        pessoa.ligarCarro();
+        pessoa.setCambioMarcha(0);
+        pessoa.frearCarro();
+        pessoa.desligarCarro();
+
         JOptionPane.showMessageDialog(null, mensagem.toString());
 
     }

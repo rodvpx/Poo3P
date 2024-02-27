@@ -4,14 +4,17 @@ import javax.swing.JOptionPane;
 
 public class Carro {
 
+    StringBuilder mensagem = new StringBuilder();
+
     private String tipo;
     private String cor;
     private String placa;
     private int numPortas;
     private Pessoa dono;
+    private int cambio;
 
     public Carro() {
-        
+
     }
 
     public Carro(String tipo, String cor, String placa, int numPortas) {
@@ -25,6 +28,30 @@ public class Carro {
 
         JOptionPane.showMessageDialog(null, "TIPO: " + this.tipo + "\n COR: " + this.cor + "\n PLACA: " + this.placa
                 + "\n PORTAS: " + this.numPortas + "\n");
+    }
+
+    public void ligar() {
+
+        mensagem.append("\nCARRO LIGADO");
+        JOptionPane.showMessageDialog(null, mensagem.toString());
+    }
+
+    public void desligar() {
+
+        mensagem.append("\nCARRO DESLIGADO");
+        JOptionPane.showMessageDialog(null, mensagem.toString());
+    }
+
+    public void acelerar() {
+
+        mensagem.append("\nCARRO ACELERANDO");
+        JOptionPane.showMessageDialog(null, mensagem.toString());
+    }
+
+    public void frear() {
+
+        mensagem.append("\nCARRO FREANDO");
+        JOptionPane.showMessageDialog(null, mensagem.toString());
     }
 
     public String getTipo() {
@@ -65,6 +92,17 @@ public class Carro {
 
     public void setDono(Pessoa dono) {
         this.dono = dono;
+    }
+
+    public void setCambio(int marcha) {
+        this.cambio = marcha;
+    }
+
+    public int getCambio() {
+
+        mensagem.append("\nMARCHA: " + this.cambio);
+        JOptionPane.showMessageDialog(null, mensagem.toString());
+        return this.cambio;
     }
 
 }

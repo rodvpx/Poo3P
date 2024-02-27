@@ -6,10 +6,10 @@ public class Pessoa {
     private String corDoCabelo;
     private String biotipo;
     private int idade;
-    private Carro car;
+    private Carro carro;
 
     public Pessoa () {
-        
+
     }
     
     public Pessoa(String nome, String corDoCabelo, String biotipo, int idade) {
@@ -17,6 +17,22 @@ public class Pessoa {
         this.corDoCabelo = corDoCabelo;
         this.biotipo = biotipo;
         this.idade = idade;
+    }
+
+    public void ligarCarro () {
+        carro.ligar();
+    }
+
+    public void desligarCarro () {
+        carro.desligar();
+    }
+
+    public void aceleraCarro () {
+        carro.acelerar();
+    }
+
+    public void frearCarro () {
+        carro.frear();
     }
 
     public String getNome() {
@@ -51,11 +67,19 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    public Carro getCar() {
-        return car;
+    public Carro getCarro() {
+        return carro;
     }
 
-    public void setCar(Carro car) {
-        this.car = car;
+    public void setCarro(Carro carro) {
+        this.carro = carro;
+    }
+
+    public void setCambioMarcha(int marcha){
+        carro.setCambio(marcha);
+    }
+
+    public void getCambioMarcha(){
+        carro.getCambio();
     }
 }
