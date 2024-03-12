@@ -7,6 +7,4 @@ public class Livros {
     private String area;
     private String editora;
     private int ano;
-    private String titulo;
-    private String titulo;
 }

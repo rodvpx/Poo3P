@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Aula01/src"/>
+	<classpathentry kind="src" path="AulaProjetoBanco/Banco/src"/>
+	<classpathentry kind="src" path="AulaProjetoCarro/Carro/src"/>
+	<classpathentry kind="src" path="Biblioteca/src"/>
+	<classpathentry kind="src" path="CalculadoraDeParcelas/src"/>
+	<classpathentry kind="src" path="Composicao/src"/>
+	<classpathentry kind="src" path="Heranca/src"/>
+	<classpathentry kind="src" path="PessoaFJ/src/pj"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
